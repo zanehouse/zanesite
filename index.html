@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zane House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="shortcut icon" href="/assets/aboutfavicon.ico" type="image/x-icon">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="/css/cursor.css">
+</head>
+
+<body>
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <!-- Fallback for users with JS disabled: make reveal elements visible immediately -->
+  <noscript>
+    <style>
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    </style>
+  </noscript>
+
+
+  <main>
+    <section class="hero reveal active" style="margin-bottom: 2rem;">
+      <h1 style="line-height: .88; font-size: 2.5rem; margin-bottom: 1rem;">
+        <strong style="font-family: var(--font-serif);">zane house</strong><br>
+        <span style="font-size: .5em; color: var(--muted); font-weight:400; font-family: var(--font-sans);">
+          macro research, systems engineering
+        </span>
+      </h1>
+    </section>
+
+    <section class="content active">
+      <div class="reveal">
+        <section class="card">
+          <div style="display:flex; flex-direction:row; gap:5%;">
+            <div style="width:100%">
+              <!-- if img present, width: 65%, img parent comps 5% gap, add <br> before phrase complex problems. -->
+              <h1 style="font-size: 1.75rem; margin-bottom: .5rem; font-family: var(--font-serif);">I build and deploy
+                systems that filter markets through macro.</h1>
+              <h2 style="font-size: 1rem; font-weight:400;">There's no shortage of information anymore. There's a
+                shortage of signal. Most of what moves through markets is noise, and most people can't tell which is
+                which. At Elysium, I build cause-and-effect frameworks that cut through it, reading regime shifts and
+                rate cycles through incentives and historical precedent to isolate the few forces that actually move
+                price. Those frameworks become the systems I deploy: repeatable, testable, and built to hold up when the
+                regime turns.</h2>
+              <br>
+              <a class="card-cta" href="/home/" style="place-self: center;">Explore Elysium →</a>
+            </div>
+            <!-- <div style="width:30%; display:grid; place-items:center;">
+              <img src="" title="you found me!" alt="Zane House"
+                style="background: #ffffff25; border: 1px solid var(--border); width: 85%; border-radius: 4px; object-fit:cover; aspect-ratio: 4/5;"
+                class="unselectable">
+                <div style="background: #ffffff05; border: 1px solid var(--border); width: 85%; border-radius: 4px; object-fit:cover; aspect-ratio: 4/5;"
+                class="unselectable">
+                
+                </div>
+            </div> -->
+          </div>
+        </section>
+      </div>
+      <br>
+
+      <section style="margin-top: 2rem;" class="reveal">
+        <h1 style="margin-bottom: 1rem;">My Skillsets</h1>
+        <style>
+          .cards--skills {
+            grid-template-columns: repeat(3, 1fr);
+          }
+
+          .cards--skills .card-summary {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+          }
+
+          @media (max-width: 860px) {
+            .cards--skills {
+              grid-template-columns: 1fr;
+            }
+          }
+
+          .cards--research {
+            grid-template-columns: 1fr;
+          }
+        </style>
+        <div class="cards cards--skills">
+          <div class="card">
+            <h2 class="card-title">Macro Research</h2>
+            <p class="card-summary">Reading the macro regime through rate cycles, policy, and the Fed's balance sheet,
+              which sets my filter for the names I weight and the ones I rule out entirely.</p>
+          </div>
+          <div class="card">
+            <h2 class="card-title">Quantitative Research</h2>
+            <p class="card-summary">Reading positioning through the options chain, from dealer exposure to expirations
+              and where price is pinned. Structural data I use to time entries, not to build the thesis.</p>
+          </div>
+          <div class="card">
+            <h2 class="card-title">Systems Engineering</h2>
+            <p class="card-summary">I build and ship the systems that run the frameworks, taking each one from raw
+              research to a working tool, end to end.</p>
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 2rem;" class="reveal">
+        <h1 style="margin-bottom: .5rem;">Selected Research</h1>
+        <p class="card-summary" style="margin-bottom: 1.5rem;">
+          Independent equity and macro research. Full thesis papers, sourced and dated.
+        </p>
+
+        <div class="cards cards--research">
+
+          <div class="card">
+            <div class="card-date">NASDAQ: MU · Dec 2025</div>
+            <h2 class="card-title">Micron Technology</h2>
+            <p class="card-summary">
+              Bullish on the HBM and data center re-rating. Called the AI-driven memory cycle in December; the stock has
+              since 4x'd past every analyst target.
+            </p>
+            <a class="card-cta" href="PASTE_MU_LINK" target="_blank" rel="noopener">Read the paper →</a>
+          </div>
+
+          <div class="card">
+            <div class="card-date">NYSE: LLY · Apr 2026</div>
+            <h2 class="card-title">Eli Lilly</h2>
+            <p class="card-summary">
+              Bullish over 12 to 24 months on GLP-1 leadership, with the first unrestricted oral GLP-1 as the near-term
+              catalyst and litigation as the main risk. Paired with the Novo Nordisk note as a relative-value view on
+              the GLP-1 share shift.
+            </p>
+            <a class="card-cta" href="PASTE_LLY_LINK" target="_blank" rel="noopener">Read the paper →</a>
+          </div>
+
+          <div class="card">
+            <div class="card-date">NYSE: NVO · Jul 2025</div>
+            <h2 class="card-title">Novo Nordisk</h2>
+            <p class="card-summary">
+              Bearish on share loss to Lilly, a growing legal overhang, and a breakdown in technical structure. The
+              short side of the GLP-1 pair, with a falsifiable call and defined downside targets.
+            </p>
+            <a class="card-cta" href="PASTE_NVO_LINK" target="_blank" rel="noopener">Read the paper →</a>
+          </div>
+
+        </div>
+      </section>
+    </section>
+    <section style="margin-top: 2rem;">
+      <h1 style="margin-bottom: .5rem;">Contact</h1>
+      <p class="card-summary" style="margin-bottom: 1.5rem;">
+        For research access, collaboration, or inquiries.
+      </p>
+      <div class="cards cards--research">
+        <div class="card">
+          <h2 class="card-title">Get in touch</h2>
+          <p class="card-summary" style="margin-bottom: 1.4rem;">
+            Best reached by email, or on X for ongoing market notes.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:1.5rem; align-items:center;">
+            <a class="card-cta" href="mailto:zane@elysiumlab.markets">Email →</a>
+            <a class="card-cta" href="https://x.com/zjprofits" target="_blank" rel="noopener">X / @zjprofits →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="/js/script.js"></script>
+
+  <script src="/js/load.js" defer></script>
+  <script>
+    (function () {
+      var canvas = document.getElementById('hero-canvas');
+      if (!canvas) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      var ctx = canvas.getContext('2d');
+      var NODE_COUNT = 200;
+      var MAX_DIST = 100;
+      var SPEED = 0.33;
+      var nodes = [];
+      var W, H, raf;
+
+      function resize() {
+        var dpr = window.devicePixelRatio || 1;
+        var rect = canvas.parentElement.getBoundingClientRect();
+        W = rect.width;
+        H = rect.height;
+        canvas.width = W * dpr;
+        canvas.height = H * dpr;
+        canvas.style.width = W + 'px';
+        canvas.style.height = H + 'px';
+        ctx.scale(dpr, dpr);
+      }
+
+      function init() {
+        nodes = [];
+        for (var i = 0; i < NODE_COUNT; i++) {
+          nodes.push({
+            x: Math.random() * W,
+            y: Math.random() * H,
+            vx: (Math.random() - 0.5) * SPEED,
+            vy: (Math.random() - 0.5) * SPEED,
+            r: Math.random() * 1.2 + 0.4
+          });
+        }
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+
+        for (var i = 0; i < nodes.length; i++) {
+          for (var j = i + 1; j < nodes.length; j++) {
+            var dx = nodes[i].x - nodes[j].x;
+            var dy = nodes[i].y - nodes[j].y;
+            var dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < MAX_DIST) {
+              var alpha = (1 - dist / MAX_DIST) * 0.12;
+              ctx.beginPath();
+              ctx.strokeStyle = 'rgba(212,212,212,' + alpha + ')';
+              ctx.lineWidth = 0.6;
+              ctx.moveTo(nodes[i].x, nodes[i].y);
+              ctx.lineTo(nodes[j].x, nodes[j].y);
+              ctx.stroke();
+            }
+          }
+        }
+
+        for (var k = 0; k < nodes.length; k++) {
+          var n = nodes[k];
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(212,212,212,0.22)';
+          ctx.fill();
+
+          n.x += n.vx;
+          n.y += n.vy;
+          if (n.x < 0 || n.x > W) n.vx *= -1;
+          if (n.y < 0 || n.y > H) n.vy *= -1;
+        }
+
+        raf = requestAnimationFrame(draw);
+      }
+
+      resize();
+      init();
+      draw();
+
+      window.addEventListener('resize', function () {
+        resize();
+        init();
+      });
+    })();
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="/js/cursor.js"></script>
+  <script src="/js/magnetic.js"></script>
+  <script>
+    const cursor = new Cursor({ container: "body", speed: 0.35, ease: "power3.out", visibleTimeout: 200 });
+  </script>
+</body>
+
+</html>
